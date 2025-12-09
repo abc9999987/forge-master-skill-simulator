@@ -310,11 +310,46 @@ function displayResults(resultMatrix) {
 		
 		resultGrid.appendChild(skillItem);
 	});
+
+	// 상세 결과 표시
+	displayDetailResults(resultMatrix);
 	
 	resultSection.style.display = 'block';
 }
 
+function displayDetailResults(resultMatrix) {
+	const detailGrid = document.getElementById('detailGrid');
+	detailGrid.innerHTML = '';
+
+	resultMatrix.forEach(trial => {
+		const trialRow = document.createElement('div');
+		trialRow.className = 'trial-row';
+
+		trial.forEach(skillName => {
+			const skillIndex = SKILL_NAME.indexOf(skillName);
+			if (skillIndex > -1) {
+				const iconDiv = document.createElement('div');
+				iconDiv.className = 'detail-skill-icon';
+				iconDiv.style.backgroundPosition = `0px -${skillIndex * 48}px`;
+				iconDiv.title = skillName;
+				trialRow.appendChild(iconDiv);
+			}
+		});
+		detailGrid.appendChild(trialRow);
+	});
+}
+
+function toggleDetailView() {
+	const detailArea = document.getElementById('detailArea');
+	const toggleArrow = document.getElementById('toggleArrow');
+	const isHidden = detailArea.style.display === 'none' || detailArea.style.display === '';
+
+	detailArea.style.display = isHidden ? 'block' : 'none';
+	toggleArrow.textContent = isHidden ? '▲' : '▼';
+}
+
 simulateBtn.addEventListener('click', skillSimulate);
+document.getElementById('resultHeader').addEventListener('click', toggleDetailView);
 resetSeedBtn.addEventListener('click', () => {
 	setSkillTable(1000);
 	console.log('Skill Seed 초기화:', skillSeed);

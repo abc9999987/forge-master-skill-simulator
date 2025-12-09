@@ -49,8 +49,14 @@
 </div>
 
 <div class="result-section" id="resultSection" style="display:none;">
-	<h2 class="result-section-h2">뽑기 결과</h2>
+	<div class="result-header" id="resultHeader">
+		<h2 class="result-section-h2">뽑기 결과</h2>
+		<span id="toggleArrow" class="toggle-arrow">▼</span>
+	</div>
 	<div id="resultGrid" class="result-grid"></div>
+	<div id="detailArea" class="detail-area" style="display:none;">
+		<div id="detailGrid" class="detail-grid"></div>
+	</div>
 </div>
 
 <script id="skillRateData" type="application/json">

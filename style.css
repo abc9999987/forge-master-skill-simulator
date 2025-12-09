@@ -324,3 +324,63 @@ button.primary:hover {
 	color: #666;
 	text-align: center;
 }
+
+/* 결과 섹션 헤더 */
+.result-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	padding: 10px;
+	border-bottom: 2px solid #ffe1dc;
+	margin-bottom: 16px;
+	transition: background-color 0.2s ease;
+}
+
+.result-header:hover {
+	background-color: #fff8f7;
+}
+
+.toggle-arrow {
+	font-size: 16px;
+	color: #ff6b5a;
+	font-weight: bold;
+}
+
+/* 상세 결과 영역 */
+.detail-area {
+	margin-top: 20px;
+	padding: 16px;
+	background: #fff8f7;
+	border-radius: 8px;
+	border: 1px solid #ffecec;
+	max-height: 400px; /* 내용이 너무 길어질 경우를 대비해 최대 높이 설정 */
+	overflow-y: auto; /* 스크롤바 자동 생성 */
+}
+
+.detail-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.trial-row {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	padding: 4px 0;
+}
+
+.detail-skill-icon {
+	width: 48px;
+	height: 48px;
+	background-image: url('skills.png');
+	background-repeat: no-repeat;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	transition: transform 0.2s ease;
+}
+
+.detail-skill-icon:hover {
+	transform: scale(1.1);
+}
