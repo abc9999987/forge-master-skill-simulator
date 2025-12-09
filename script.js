@@ -340,12 +340,21 @@ function displayDetailResults(resultMatrix) {
 }
 
 function toggleDetailView() {
-	const detailArea = document.getElementById('detailArea');
-	const toggleArrow = document.getElementById('toggleArrow');
-	const isHidden = detailArea.style.display === 'none' || detailArea.style.display === '';
+    const detailArea = document.getElementById('detailArea');
+    const toggleArrow = document.getElementById('toggleArrow');
+    const isHidden = detailArea.style.display === 'none' || detailArea.style.display === '';
 
-	detailArea.style.display = isHidden ? 'block' : 'none';
-	toggleArrow.textContent = isHidden ? '▲' : '▼';
+    detailArea.style.display = isHidden ? 'block' : 'none';
+    toggleArrow.textContent = isHidden ? '▲' : '▼';
+
+    // 상세 결과가 열릴 때만 스크롤 이동
+    if (isHidden) {
+        const resultHeader = document.getElementById('resultHeader');
+        // DOM이 업데이트된 후 스크롤을 실행하기 위해 짧은 지연 시간을 줍니다.
+        setTimeout(() => {
+            resultHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+    }
 }
 
 simulateBtn.addEventListener('click', skillSimulate);
