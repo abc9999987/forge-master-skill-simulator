@@ -7,7 +7,12 @@
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<h1>스킬 뽑기 시뮬레이터</h1>
+    <!-- 언어 선택 UI 추가 -->
+    <div class="lang-selector">
+        <button data-lang="ko" class="lang-btn active">한국어</button>
+        <button data-lang="en" class="lang-btn">English</button>
+    </div>
+	<h1 data-lang-key="appTitle">스킬 뽑기 시뮬레이터</h1>
 	<div class="container">
 		<div class="left">
 		<div class="stage-controls">
@@ -15,8 +20,8 @@
 			<div class="stage-display" id="stageText">1-1</div>
 			<button id="nextBtn" class="arrow" title="다음 스테이지">▶</button>
 		</div>
-		<div class="muted">좌/우 화살표로 스테이지 선택 (1-1 ~ 10-10)</div>
-		<div class="muted">키보드: ← / → 로도 변경 가능</div>
+		<div class="muted" data-lang-key="stageSelectHelp1">좌/우 화살표로 스테이지 선택 (1-1 ~ 10-10)</div>
+        <div class="muted" data-lang-key="stageSelectHelp2">키보드: ← / → 로도 변경 가능</div>
 
         <div class="stage-input-area">
 			<div class="input-group">
@@ -24,7 +29,7 @@
 				<span>-</span>
 				<input type="number" id="minorInput" min="1" max="10" placeholder="1" />
 			</div>
-			<button id="goBtn" class="go-btn">이동</button>
+			<button id="goBtn" data-lang-key="goToStage" class="go-btn">이동</button>
 		</div>
 		</div>
 
@@ -42,15 +47,15 @@
 
 <div class="simulate-section">
 	<div class="simulate-controls">
-		<button id="resetSeedBtn" class="reset-seed-btn">Skill Seed 초기화</button>
+		<button id="resetSeedBtn" data-lang-key="resetSeed" class="reset-seed-btn">Skill Seed 초기화</button>
 		<input type="number" id="trialCount" min="1" max="1000" value="10" placeholder="10" />
-		<button id="simulateBtn" class="simulate-btn">회 뽑기 시작!</button>
+		<button id="simulateBtn" data-lang-key="startSimulate" class="simulate-btn">회 뽑기 시작!</button>
 	</div>
 </div>
 
 <div class="result-section" id="resultSection" style="display:none;">
 	<div class="result-header" id="resultHeader">
-		<h2 class="result-section-h2">뽑기 결과</h2>
+		<h2 data-lang-key="resultTitle" class="result-section-h2">뽑기 결과</h2>
 		<span id="toggleArrow" class="toggle-arrow">▼</span>
 	</div>
 	<div id="resultGrid" class="result-grid"></div>

@@ -1,6 +1,86 @@
 // 숫자 -> 키 매핑
 const words = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
 
+// 최상단에 언어 데이터 추가
+const i18n = {
+    ko: {
+        appTitle: "스킬 뽑기 시뮬레이터",
+        stageProbTitle: "스테이지 확률",
+        stageSelectHelp1: "좌/우 화살표로 스테이지 선택 (1-1 ~ 10-10)",
+        stageSelectHelp2: "키보드: ← / → 로도 변경 가능",
+        goToStage: "이동",
+        resetSeed: "Skill Seed 초기화",
+        startSimulate: "회 뽑기 시작!",
+        resultTitle: "뽑기 결과",
+        rateNormal: "일반",
+        rateRare: "희귀한",
+        rateEpic: "서사시",
+        rateLegendary: "전설",
+        rateUltimate: "궁극의",
+        rateMythic: "신화",
+        skillCountUnit: "개",
+        // ... 기타 모든 텍스트
+    },
+    en: {
+        appTitle: "Skill Gacha Simulator",
+        stageProbTitle: "Stage Probabilities",
+        stageSelectHelp1: "Select stage with Left/Right arrows (1-1 ~ 10-10)",
+        stageSelectHelp2: "Keyboard: ← / → also works",
+        goToStage: "Go",
+        resetSeed: "Reset Skill Seed",
+        startSimulate: "Trials Start!",
+        resultTitle: "Gacha Results",
+        rateNormal: "Normal",
+        rateRare: "Rare",
+        rateEpic: "Epic",
+        rateLegendary: "Legendary",
+        rateUltimate: "Ultimate",
+        rateMythic: "Mythic",
+        skillCountUnit: "ea",
+        // ... etc.
+    }
+};
+
+let currentLang = localStorage.getItem('language') || 'ko';
+
+// 언어 업데이트 함수
+function updateLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('language', lang);
+
+    document.querySelectorAll('[data-lang-key]').forEach(el => {
+        const key = el.dataset.langKey;
+        if (i18n[lang][key]) {
+            el.textContent = i18n[lang][key];
+        }
+    });
+
+    // 동적으로 생성되는 텍스트들도 업데이트
+    renderRates(); 
+    // 만약 결과가 표시된 상태라면 결과 텍스트도 업데이트
+    const resultSection = document.getElementById('resultSection');
+    if(resultSection.style.display === 'block') {
+        // displayResults 함수를 다시 호출하거나, 텍스트만 바꾸는 로직 추가
+    }
+
+    // 활성 버튼 스타일 업데이트
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+}
+
+// 언어 버튼 이벤트 리스너
+document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        updateLanguage(btn.dataset.lang);
+    });
+});
+
+// 페이지 로드 시 초기 언어 설정
+document.addEventListener('DOMContentLoaded', () => {
+    updateLanguage(currentLang);
+});
+
 // localStorage에서 마지막 선택 스테이지 불러오기
 const savedStage = localStorage.getItem('selectedStage');
 let major = 1; // 1..10
@@ -32,13 +112,14 @@ function formatPercent(v) {
 }
 
 function renderRates() {
-	stageText.textContent = `${major}-${minor}`;
-	ratesTbody.innerHTML = '';
-	warningEl.style.display = 'none';
-	stageTitle.textContent = `스테이지 ${major}-${minor} 확률`;
+    stageText.textContent = `${major}-${minor}`;
+    ratesTbody.innerHTML = '';
+    warningEl.style.display = 'none';
+    // i18n 객체를 사용하도록 수정
+    stageTitle.textContent = `${i18n[currentLang].stageProbTitle} ${major}-${minor}`;
 
-	// 현재 선택된 스테이지를 localStorage에 저장
-	localStorage.setItem('selectedStage', `${major}-${minor}`);
+    // 현재 선택된 스테이지를 localStorage에 저장
+    localStorage.setItem('selectedStage', `${major}-${minor}`);
 
 	if (!data) {
 		warningEl.textContent = '데이터를 불러오는 중입니다...';
@@ -56,13 +137,13 @@ function renderRates() {
 
 	const rates = data[maj][min];
 	const mapping = [
-		['normal', '일반'],
-		['rare', '희귀한'],
-		['epic', '서사시'],
-		['legendary', '전설'],
-		['ultimate', '궁극의'],
-		['mythic', '신화']
-	];
+        ['normal', i18n[currentLang].rateNormal],
+        ['rare', i18n[currentLang].rateRare],
+        ['epic', i18n[currentLang].rateEpic],
+        ['legendary', i18n[currentLang].rateLegendary],
+        ['ultimate', i18n[currentLang].rateUltimate],
+        ['mythic', i18n[currentLang].rateMythic]
+    ];
 
 	for (const [key, label] of mapping) {
 		const val = rates[key];

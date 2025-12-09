@@ -385,6 +385,30 @@ button.primary:hover {
 	transform: scale(1.1);
 }
 
+.lang-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 8px;
+}
+
+.lang-btn {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #555;
+}
+
+.lang-btn.active {
+    background: #ff8a7a;
+    color: white;
+    border-color: #ff8a7a;
+}
+
 /* 반응형 레이아웃: 모바일 화면 대응 */
 @media (max-width: 768px) {
 	body {
