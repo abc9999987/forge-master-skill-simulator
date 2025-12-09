@@ -1,0 +1,822 @@
+{
+    "one": {
+        "one": {
+            "normal": 10000,
+            "rare": 0,
+            "epic": 0,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "two": {
+            "normal": 10000,
+            "rare": 0,
+            "epic": 0,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "three": {
+            "normal": 10000,
+            "rare": 0,
+            "epic": 0,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "four": {
+            "normal": 8995,
+            "rare": 1000,
+            "epic": 5,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "five": {
+            "normal": 8854,
+            "rare": 1140,
+            "epic": 6,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "six": {
+            "normal": 8693,
+            "rare": 1300,
+            "epic": 7,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "seven": {
+            "normal": 8510,
+            "rare": 1482,
+            "epic": 8,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "eight": {
+            "normal": 8300,
+            "rare": 1689,
+            "epic": 11,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "nine": {
+            "normal": 8061,
+            "rare": 1925,
+            "epic": 14,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "ten": {
+            "normal": 7788,
+            "rare": 2195,
+            "epic": 17,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        }
+    },
+    "two": {
+        "one": {
+            "normal": 7476,
+            "rare": 2503,
+            "epic": 21,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "two": {
+            "normal": 7121,
+            "rare": 2853,
+            "epic": 26,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "three": {
+            "normal": 6714,
+            "rare": 3252,
+            "epic": 34,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "four": {
+            "normal": 6251,
+            "rare": 3707,
+            "epic": 42,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "five": {
+            "normal": 5721,
+            "rare": 4227,
+            "epic": 52,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "six": {
+            "normal": 5117,
+            "rare": 4818,
+            "epic": 65,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "seven": {
+            "normal": 4426,
+            "rare": 5492,
+            "epic": 82,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "eight": {
+            "normal": 3636,
+            "rare": 6262,
+            "epic": 102,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "nine": {
+            "normal": 2734,
+            "rare": 7138,
+            "epic": 128,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "ten": {
+            "normal": 1750,
+            "rare": 8090,
+            "epic": 160,
+            "legendary": 0,
+            "ultimate": 0,
+            "mythic": 0
+        }
+    },
+    "three": {
+        "one": {
+            "normal": 1750,
+            "rare": 8049,
+            "epic": 200,
+            "legendary": 1,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "two": {
+            "normal": 1750,
+            "rare": 8009,
+            "epic": 240,
+            "legendary": 1,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "three": {
+            "normal": 1750,
+            "rare": 7961,
+            "epic": 287,
+            "legendary": 2,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "four": {
+            "normal": 1750,
+            "rare": 7903,
+            "epic": 345,
+            "legendary": 2,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "five": {
+            "normal": 1750,
+            "rare": 7834,
+            "epic": 413,
+            "legendary": 3,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "six": {
+            "normal": 1750,
+            "rare": 7751,
+            "epic": 495,
+            "legendary": 4,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "seven": {
+            "normal": 1750,
+            "rare": 7651,
+            "epic": 595,
+            "legendary": 4,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "eight": {
+            "normal": 1750,
+            "rare": 7532,
+            "epic": 713,
+            "legendary": 5,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "nine": {
+            "normal": 1750,
+            "rare": 7389,
+            "epic": 854,
+            "legendary": 7,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "ten": {
+            "normal": 1750,
+            "rare": 7217,
+            "epic": 1024,
+            "legendary": 9,
+            "ultimate": 0,
+            "mythic": 0
+        }
+    },
+    "four": {
+        "one": {
+            "normal": 1750,
+            "rare": 7011,
+            "epic": 1228,
+            "legendary": 11,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "two": {
+            "normal": 1750,
+            "rare": 6764,
+            "epic": 1473,
+            "legendary": 13,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "three": {
+            "normal": 1750,
+            "rare": 6468,
+            "epic": 1765,
+            "legendary": 17,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "four": {
+            "normal": 1750,
+            "rare": 6112,
+            "epic": 2117,
+            "legendary": 21,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "five": {
+            "normal": 1750,
+            "rare": 5686,
+            "epic": 2538,
+            "legendary": 26,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "six": {
+            "normal": 1750,
+            "rare": 5174,
+            "epic": 3043,
+            "legendary": 33,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "seven": {
+            "normal": 1750,
+            "rare": 4560,
+            "epic": 3649,
+            "legendary": 41,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "eight": {
+            "normal": 1750,
+            "rare": 3824,
+            "epic": 4375,
+            "legendary": 51,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "nine": {
+            "normal": 1750,
+            "rare": 2941,
+            "epic": 5245,
+            "legendary": 64,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "ten": {
+            "normal": 1750,
+            "rare": 1881,
+            "epic": 6289,
+            "legendary": 80,
+            "ultimate": 0,
+            "mythic": 0
+        }
+    },
+    "five": {
+        "one": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 6550,
+            "legendary": 100,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "two": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 6478,
+            "legendary": 122,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "three": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 6451,
+            "legendary": 149,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "four": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 6417,
+            "legendary": 182,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "five": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 6376,
+            "legendary": 222,
+            "ultimate": 0,
+            "mythic": 0
+        },
+        "six": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 6327,
+            "legendary": 270,
+            "ultimate": 3,
+            "mythic": 0
+        },
+        "seven": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 6266,
+            "legendary": 330,
+            "ultimate": 4,
+            "mythic": 0
+        },
+        "eight": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 6192,
+            "legendary": 403,
+            "ultimate": 5,
+            "mythic": 0
+        },
+        "nine": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 6102,
+            "legendary": 491,
+            "ultimate": 7,
+            "mythic": 0
+        },
+        "ten": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 5993,
+            "legendary": 599,
+            "ultimate": 8,
+            "mythic": 0
+        }
+    },
+    "six": {
+        "one": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 5859,
+            "legendary": 730,
+            "ultimate": 11,
+            "mythic": 0
+        },
+        "two": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 5695,
+            "legendary": 892,
+            "ultimate": 13,
+            "mythic": 0
+        },
+        "three": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 5496,
+            "legendary": 1087,
+            "ultimate": 17,
+            "mythic": 0
+        },
+        "four": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 5253,
+            "legendary": 1326,
+            "ultimate": 21,
+            "mythic": 0
+        },
+        "five": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 4956,
+            "legendary": 1618,
+            "ultimate": 26,
+            "mythic": 0
+        },
+        "six": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 4593,
+            "legendary": 1974,
+            "ultimate": 33,
+            "mythic": 0
+        },
+        "seven": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 4150,
+            "legendary": 2409,
+            "ultimate": 41,
+            "mythic": 0
+        },
+        "eight": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 3610,
+            "legendary": 2939,
+            "ultimate": 51,
+            "mythic": 0
+        },
+        "nine": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 2951,
+            "legendary": 3585,
+            "ultimate": 64,
+            "mythic": 0
+        },
+        "ten": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 2146,
+            "legendary": 4374,
+            "ultimate": 80,
+            "mythic": 0
+        }
+    },
+    "seven": {
+        "one": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 4850,
+            "ultimate": 100,
+            "mythic": 0
+        },
+        "two": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 4831,
+            "ultimate": 119,
+            "mythic": 0
+        },
+        "three": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 4808,
+            "ultimate": 142,
+            "mythic": 0
+        },
+        "four": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 4780,
+            "ultimate": 169,
+            "mythic": 1
+        },
+        "five": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 4747,
+            "ultimate": 201,
+            "mythic": 2
+        },
+        "six": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 4708,
+            "ultimate": 239,
+            "mythic": 3
+        },
+        "seven": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 4662,
+            "ultimate": 284,
+            "mythic": 4
+        },
+        "eight": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 4607,
+            "ultimate": 338,
+            "mythic": 5
+        },
+        "nine": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 4541,
+            "ultimate": 402,
+            "mythic": 7
+        },
+        "ten": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 4463,
+            "ultimate": 479,
+            "mythic": 8
+        }
+    },
+    "eight": {
+        "one": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 4370,
+            "ultimate": 569,
+            "mythic": 11
+        },
+        "two": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 4259,
+            "ultimate": 678,
+            "mythic": 13
+        },
+        "three": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 4127,
+            "ultimate": 806,
+            "mythic": 17
+        },
+        "four": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 3969,
+            "ultimate": 960,
+            "mythic": 21
+        },
+        "five": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 3782,
+            "ultimate": 1142,
+            "mythic": 26
+        },
+        "six": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 3558,
+            "ultimate": 1359,
+            "mythic": 33
+        },
+        "seven": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 3292,
+            "ultimate": 1617,
+            "mythic": 41
+        },
+        "eight": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 2974,
+            "ultimate": 1925,
+            "mythic": 51
+        },
+        "nine": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 2596,
+            "ultimate": 2290,
+            "mythic": 64
+        },
+        "ten": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 2145,
+            "ultimate": 2725,
+            "mythic": 80
+        }
+    },
+    "nine": {
+        "one": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 3200,
+            "mythic": 100
+        },
+        "two": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 3184,
+            "mythic": 116
+        },
+        "three": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 3165,
+            "mythic": 135
+        },
+        "four": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 3144,
+            "mythic": 156
+        },
+        "five": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 3119,
+            "mythic": 181
+        },
+        "six": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 3090,
+            "mythic": 210
+        },
+        "seven": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 3056,
+            "mythic": 244
+        },
+        "eight": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 3017,
+            "mythic": 283
+        },
+        "nine": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 2972,
+            "mythic": 328
+        },
+        "ten": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 2920,
+            "mythic": 380
+        }
+    },
+    "ten": {
+        "one": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 2859,
+            "mythic": 441
+        },
+        "two": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 2788,
+            "mythic": 512
+        },
+        "three": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 2706,
+            "mythic": 594
+        },
+        "four": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 2611,
+            "mythic": 689
+        },
+        "five": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 2501,
+            "mythic": 799
+        },
+        "six": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 2373,
+            "mythic": 927
+        },
+        "seven": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 2225,
+            "mythic": 1075
+        },
+        "eight": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 2053,
+            "mythic": 1247
+        },
+        "nine": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 1854,
+            "mythic": 1446
+        },
+        "ten": {
+            "normal": 1750,
+            "rare": 1650,
+            "epic": 1650,
+            "legendary": 1650,
+            "ultimate": 1650,
+            "mythic": 1650
+        }
+    }
+}

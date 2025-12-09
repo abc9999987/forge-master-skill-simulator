@@ -1,0 +1,269 @@
+:root {
+	font-family: 'Nunito', 'Pretendard', system-ui, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+}
+
+body {
+	margin: 0;
+	padding: 40px;
+	background: #faf7f5;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: 800;
+	margin-bottom: 20px;
+	color: #ff8a7a;
+}
+
+.container {
+	display: flex;
+	gap: 40px;
+	align-items: stretch;
+	max-width: 1100px;
+	width: 100%;
+	justify-content: center;
+}
+
+/* Left / Right panels */
+.left {
+	width: 360px;
+	background: white;
+	padding: 25px;
+	border-radius: 18px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	border: 2px solid #ffe1dc;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.right {
+	flex: 1;
+	min-width: 360px;
+	background: white;
+	padding: 25px;
+	border-radius: 18px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+	border: 2px solid #ffecec;
+}
+
+.stage-controls {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+button.arrow {
+	width: 48px;
+	height: 48px;
+	border-radius: 12px;
+	border: 1.8px solid #ffc5bc;
+	background: #fffaf9;
+	cursor: pointer;
+	font-size: 18px;
+	color: #ff6b5a;
+	font-weight: 800;
+}
+
+button.arrow:hover {
+	background: #ffefe9;
+}
+
+.stage-display {
+	font-weight: 800;
+	font-size: 20px;
+	color: #492a21;
+}
+
+.stage-input-area {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.stage-input-area label {
+	display: block;
+	font-size: 13px;
+	color: #555;
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+.input-group {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	justify-content: center;
+}
+
+.input-group input[type="number"] {
+	width: 50px;
+	padding: 8px;
+	border-radius: 8px;
+	border: 1.5px solid #ffc5bc;
+	background: #fffaf9;
+	font-size: 14px;
+	text-align: center;
+	color: #492a21;
+	font-weight: 700;
+}
+
+.input-group input[type="number"]:focus {
+	outline: none;
+	border-color: #ff8a7a;
+}
+
+.input-group span {
+	color: #ff6b5a;
+	font-weight: 800;
+	font-size: 16px;
+}
+
+.go-btn {
+	padding: 8px 16px;
+	background: #ff8a7a;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	font-size: 13px;
+	font-weight: 700;
+	cursor: pointer;
+	margin-top: 10px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.go-btn:hover {
+	background: #ff7a68;
+}
+
+/* Table styles */
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td.label {
+	width: 50%;
+	padding: 10px 8px;
+	color: #444;
+	font-weight: 700;
+}
+
+td.value {
+	padding: 10px 8px;
+	text-align: right;
+	color: #ff6b5a;
+	font-weight: 800;
+}
+
+/* Small helpers */
+.muted {
+	color: #555;
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+.warning {
+	color: #b33;
+	margin-top: 8px;
+}
+
+/* Table header look if used later */
+#ratesTable thead th {
+	background: #ffe6e2;
+	padding: 10px;
+	font-weight: 700;
+	color: #444;
+	position: sticky;
+	top: 0;
+}
+
+/* Primary buttons (if added) */
+button.primary {
+	background: #ff8a7a;
+	color: #fff;
+	padding: 10px 18px;
+	border-radius: 14px;
+	border: none;
+	cursor: pointer;
+	font-weight: 800;
+}
+
+button.primary:hover {
+	background: #ff7a68;
+}
+
+/* Simulate section */
+.simulate-section {
+	margin-top: 30px;
+	max-width: 1100px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.simulate-controls {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	background: white;
+	padding: 20px 30px;
+	border-radius: 18px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	border: 2px solid #ffe1dc;
+}
+
+.simulate-controls input[type="number"] {
+	width: 100px;
+	padding: 10px 12px;
+	border-radius: 10px;
+	border: 1.8px solid #ffc5bc;
+	background: #fffaf9;
+	font-size: 16px;
+	text-align: center;
+	color: #492a21;
+	font-weight: 700;
+}
+
+.simulate-controls input[type="number"]:focus {
+	outline: none;
+	border-color: #ff8a7a;
+}
+
+.simulate-btn {
+	padding: 12px 28px;
+	background: #ff8a7a;
+	color: white;
+	border: none;
+	border-radius: 14px;
+	font-size: 16px;
+	font-weight: 800;
+	cursor: pointer;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.simulate-btn:hover {
+	background: #ff7a68;
+}
+
+.reset-seed-btn {
+	padding: 12px 24px;
+	background: #6b7280;
+	color: white;
+	border: none;
+	border-radius: 14px;
+	font-size: 14px;
+	font-weight: 700;
+	cursor: pointer;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.reset-seed-btn:hover {
+	background: #4b5563;
+}
