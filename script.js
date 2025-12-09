@@ -179,6 +179,15 @@ function clampTrialCount() {
 trialCount.addEventListener('input', clampTrialCount);
 
 const SKILL_NAME = [
+  '외침', '화살', '고기', 
+  '수리검', '포격', '광전사',
+  '가시', '화살비', '버프',
+  '운석', '폭탄', '사기',
+  '쇄도', '벌레', '번개',
+  '기총소사', '드론', '높은 사기'
+];
+
+const SKILL_LIST = [
   ['외침', '화살', '고기'], 
   ['수리검', '포격', '광전사'],
   ['가시', '화살비', '버프'],
@@ -217,17 +226,6 @@ function skillSimulate() {
 	
 	console.log(`${major}-${minor} 스테이지에서 ${trials}회 뽑기 시작!`);
 	console.log('확률 데이터:', rates);
-    const skillIndexList = [];
-	
-	// 확률 누적 계산 (0~10000)
-	const cumulativeRates = [
-		rates.normal,
-		rates.normal + rates.rare,
-		rates.normal + rates.rare + rates.epic,
-		rates.normal + rates.rare + rates.epic + rates.legendary,
-		rates.normal + rates.rare + rates.epic + rates.legendary + rates.ultimate,
-		10000
-	];
 	
 	// skillSeed 값에 따라 등급 결정
 	const resultMatrix = [];
@@ -237,17 +235,17 @@ function skillSimulate() {
 
         for (const randValue of randValues) {
             if (randValue.skillGradeRate <= rates.mythic) {
-                rowResults.push(SKILL_NAME[5][randValue.skillTypeRate]);
+                rowResults.push(SKILL_LIST[5][randValue.skillTypeRate]);
             } else if (randValue.skillGradeRate <= rates.mythic + rates.ultimate) {
-                rowResults.push(SKILL_NAME[4][randValue.skillTypeRate]);
+                rowResults.push(SKILL_LIST[4][randValue.skillTypeRate]);
             } else if (randValue.skillGradeRate <= rates.mythic + rates.ultimate + rates.legendary) {
-                rowResults.push(SKILL_NAME[3][randValue.skillTypeRate]);
+                rowResults.push(SKILL_LIST[3][randValue.skillTypeRate]);
             } else if (randValue.skillGradeRate <= rates.mythic + rates.ultimate + rates.legendary + rates.epic) {
-                rowResults.push(SKILL_NAME[2][randValue.skillTypeRate]);
+                rowResults.push(SKILL_LIST[2][randValue.skillTypeRate]);
             } else if (randValue.skillGradeRate <= rates.mythic + rates.ultimate + rates.legendary + rates.epic + rates.rare) {
-                rowResults.push(SKILL_NAME[1][randValue.skillTypeRate]);
+                rowResults.push(SKILL_LIST[1][randValue.skillTypeRate]);
             } else if (randValue.skillGradeRate <= rates.mythic + rates.ultimate + rates.legendary + rates.epic + rates.rare + rates.normal) {
-                rowResults.push(SKILL_NAME[0][randValue.skillTypeRate]);
+                rowResults.push(SKILL_LIST[0][randValue.skillTypeRate]);
             }
         }
 		
@@ -259,7 +257,61 @@ function skillSimulate() {
 	console.log('뽑기 결과:', resultMatrix);
 	console.log(`총 ${trials}회 뽑기 완료`);
 	
-	// TODO: 결과를 UI에 표시
+	// 결과를 UI에 표시
+	displayResults(resultMatrix);
+}
+
+function displayResults(resultMatrix) {
+	// 스킬별 개수 집계
+	const skillCounts = {};
+	
+	// SKILL_NAME의 모든 스킬로 초기화
+	for (const skill of SKILL_NAME) {
+		skillCounts[skill] = 0;
+	}
+	
+	// resultMatrix를 순회하며 카운트
+	for (const row of resultMatrix) {
+		for (const skillName of row) {
+			if (skillCounts[skillName] !== undefined) {
+				skillCounts[skillName]++;
+			}
+		}
+	}
+	
+	// 결과 표시
+	const resultSection = document.getElementById('resultSection');
+	const resultGrid = document.getElementById('resultGrid');
+	
+	resultGrid.innerHTML = '';
+	
+	// 스킬별로 표시
+	SKILL_NAME.forEach((skillName, index) => {
+		const count = skillCounts[skillName];
+		
+		const skillItem = document.createElement('div');
+		skillItem.className = 'skill-item';
+		
+		const icon = document.createElement('div');
+		icon.className = 'skill-icon';
+		icon.style.backgroundPosition = `0px -${index * 48}px`;
+		
+		const countEl = document.createElement('div');
+		countEl.className = 'skill-count';
+		countEl.textContent = `${count}개`;
+		
+		const nameEl = document.createElement('div');
+		nameEl.className = 'skill-name';
+		nameEl.textContent = skillName;
+		
+		skillItem.appendChild(icon);
+		skillItem.appendChild(countEl);
+		skillItem.appendChild(nameEl);
+		
+		resultGrid.appendChild(skillItem);
+	});
+	
+	resultSection.style.display = 'block';
 }
 
 simulateBtn.addEventListener('click', skillSimulate);
