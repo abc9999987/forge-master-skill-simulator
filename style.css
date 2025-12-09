@@ -13,10 +13,13 @@ body {
 }
 
 h1 {
-	font-size: 28px;
-	font-weight: 800;
-	margin-bottom: 20px;
-	color: #ff8a7a;
+    font-size: 28px;
+    font-weight: 800;
+    margin-top: 40px; /* 위쪽 여백 추가 */
+    margin-bottom: 20px;
+    color: #ff8a7a;
+    text-align: center;
+    width: 100%;
 }
 
 .container {
@@ -385,12 +388,14 @@ button.primary:hover {
 	transform: scale(1.1);
 }
 
+/* 언어 선택 버튼 */
 .lang-selector {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: absolute; /* 절대 위치로 변경 */
+    top: 20px; /* 위에서 20px */
+    right: 20px; /* 오른쪽에서 20px */
     display: flex;
     gap: 8px;
+    z-index: 10; /* 다른 요소 위에 오도록 설정 */
 }
 
 .lang-btn {
