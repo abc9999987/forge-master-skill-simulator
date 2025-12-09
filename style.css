@@ -384,3 +384,21 @@ button.primary:hover {
 .detail-skill-icon:hover {
 	transform: scale(1.1);
 }
+
+/* 반응형 레이아웃: 모바일 화면 대응 */
+@media (max-width: 768px) {
+	body {
+		padding: 20px; /* 모바일에서는 여백을 줄임 */
+	}
+
+	.container {
+		flex-direction: column; /* 아이템을 세로로 쌓음 */
+		align-items: center; /* 가운데 정렬 */
+		gap: 20px; /* 박스 사이의 간격을 줄임 */
+	}
+
+	.left, .right {
+		width: 100%; /* 너비를 100%로 설정 */
+		max-width: 500px; /* 최대 너비 설정 (선택 사항) */
+	}
+}
